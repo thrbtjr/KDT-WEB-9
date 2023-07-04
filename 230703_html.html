@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html 수업 코드</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="" class="">
+        hello? hello? hello? hello? hello? hello? <br />
+        hello? hello? hello? hello? hello? hello? hello? hello?<br />
+        hello? hello? hello? hello? hello? hello? hello? hello? <br />
+        hello? hello? hello? hello? hello? hello? hello? hello? <br />
+        hello? hello? hello? hello? hello? hello? hello? hello? <br />
+        hello? hello? hello? hello? hello? hello? hello? hello?<br />
+        hello? hello? hello? hello? hello? hello? hello? hello? <br />
+        hello? hello? hello? hello? hello? hello? hello? hello?
+      </p>
+    </div>
+    <ul type="square">
+      <li>사과</li>
+      <li>바나나</li>
+      <li>파인애플</li>
+    </ul>
+    <hr />
+    <ol>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>파인애플</li>
+    </ol>
+
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <script>
+      $(document).ready(function () {
+        $("p, h1, h2, h3, h4, h5, h6").hover(
+          function () {
+            $(this).addClass("highlight");
+          },
+          function () {
+            $(this).removeClass("highlight");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
