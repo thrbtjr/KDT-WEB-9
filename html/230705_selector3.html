@@ -14,11 +14,20 @@
         .fruits h3:last-child{
             color: red;
         }
+        .fruits *:nth-child(2n){
+            background-color: yellow;
+        }
+        .example::after{
+            content: " 💌 ";
+        }
+        .example::before{
+            
+        }
     </style>
 </head>
 <body>
     <div class="fruits">
-        <span>딸기</span>
+        <span class="example">딸기</span>
         <span>수박</span>
         <div>오렌지</div>
         <p>망고</p>
